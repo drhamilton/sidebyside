@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script src="js/jquery.js" ></script>
+	    <script src="js/script.js"></script>
+	    
+	    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <style>
+	    	.btn-group {
+		    	display: block;
+		    	padding: 20px;
+	    	}
+	    	td {
+		    	border: black;
+		    	border-style: solid;
+	    	}
+	    	
+	    	#id {
+		    	float: left;
+		    	display: block;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div>
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Studio Size
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="staff_count_current" value="BETWEEN 0 AND 10"> Small
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="staff_count_current" value="BETWEEN 10 AND 30"> Medium
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="staff_count_current" value="BETWEEN 31 and 9000"> Large
+				</label>		
+			</div>
+		<div>
+		<br />
+		
+		<div id="result">
+		</div>
+	</body>
+</html>

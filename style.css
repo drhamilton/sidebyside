@@ -1,0 +1,61 @@
+/*
+Colors
+Blue #20215c
+Pink #EC008C
+grey #A8AAAD
+flesh #E6A99E
+brown #4E3A30
+tan #E6C59D
+
+
+
+
+*/
+h1 {
+	color: white;
+}
+
+body {
+	font-family: Helvetica;
+	background-color: #20215c
+}
+
+#id {
+	float: right;
+}
+
+#cartodb-map { 
+	width: 250px; 
+	height:250px;
+	float: left;
+}
+
+#container {
+	width: 250px; 
+	height: 250px;
+	float: left;
+}
+
+.btn-group {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.btn {
+	background-color: rgba(255,255,255,0.2);
+	width: 70%;
+	border: 0;
+}
+.buttons {
+	width: 17%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	border: 0;
+}
+
+td {
+	border: black;
+	border-style: solid;
+}

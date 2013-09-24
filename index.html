@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<script src="js/jquery.js" ></script>
+	    <script src="js/script2.js"></script>
+	    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEoegaWJJbG_dlk5dWrdE6oOmGCVJyFPA&sensor=false"> </script>
+	    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+		<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	    
+	    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div class="row">
+			<div class="span6">
+				<div class="buttons first">	
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_outings" value="1"> Outings
+					</label>
+				</div>	
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_rituals" value="1"> Rituals
+					</label>
+				</div>		
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_work_from_home" value="1"> Work From Home
+					</label>
+				</div>		
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="beer"> Beer
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="wine"> Wine
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="whiskey"> Whiskey
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="vodka"> Vodka
+					</label>
+				</div>
+				
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="5"> $$$$$
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="4"> $$$$
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="3"> $$$
+					</label>	
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="2"> $$
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="1"> $
+					</label>			
+				</div>
+				
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_noise" value="quiet"> Quiet
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_noise" value="average"> Average
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_noise" value="loud"> Loud
+					</label>		
+				</div>
+				
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_lunch_habits" value="individually"> Eat Individually
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_lunch_habits" value="small_groups"> Eat in Small Groups
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_lunch_habits" value="everyone"> Eat with Everyone
+					</label>		
+				</div>			
+			</div>
+				<div class="buttons second">	
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_outings" value="1"> Outings
+					</label>	
+				</div>	
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_rituals" value="1"> Rituals
+					</label>
+				</div>		
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_work_from_home" value="1"> Work From Home
+					</label>
+				</div>		
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="beer"> Beer
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="wine"> Wine
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="whiskey"> Whiskey
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_drink_of_choice" value="vodka"> Vodka
+					</label>
+				</div>
+				
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="5"> $$$$$
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="4"> $$$$
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="3"> $$$
+					</label>	
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="2"> $$
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="revenue" value="1"> $
+					</label>			
+				</div>
+				
+				<div class="btn-group" data-toggle="buttons">	
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_noise" value="quiet"> Quiet
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_noise" value="average"> Average
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_noise" value="loud"> Loud
+					</label>		
+				</div>
+				
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_lunch_habits" value="individually"> Eat Individually
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_lunch_habits" value="small_groups"> Eat in Small Groups
+					</label>
+				</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio" name="culture_lunch_habits" value="everyone"> Eat with Everyone
+					</label>		
+				</div>			
+			</div>
+			</div>
+			<div class="span6">
+				<div id="result"></div>
+				<div id='cartodb-map'></div>
+				<div id="container"></div>
+				<div id="age"></div>
+			</div>
+		</div>
+	</body>
+</html>

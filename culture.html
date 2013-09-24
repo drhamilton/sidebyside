@@ -1,0 +1,234 @@
+<html>
+	<head>
+		<script src="js/jquery.js" ></script>
+	    <script src="js/script.js"></script>
+	    
+	    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <style>
+	    	.btn-group {
+		    	display: block;
+		    	padding: 20px;
+	    	}
+	    	td {
+		    	border: black;
+		    	border-style: solid;
+	    	}
+	    	
+	    	#id {
+		    	float: left;
+		    	display: block;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div>
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Outings
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_outings" value="0"> No
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_outings" value="1"> Yes
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Rituals
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_rituals" value="0"> No
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_rituals" value="1"> Yes
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Work From Home
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home" value="0"> No
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home" value="1"> Yes
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Drink of Choice
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_drink_of_choice" value="beer"> Beer
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_drink_of_choice" value="wine"> Wine
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_drink_of_choice" value="whiskey"> Whiskey
+				</label>	
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_drink_of_choice" value="vodka"> Vodka
+				</label>	
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_drink_of_choice" value="none"> None
+				</label>			
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Revenue
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="revenue" value="5"> 5
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="revenue" value="4"> 4
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="revenue" value="3"> 3
+				</label>	
+				<label class="btn btn-primary">
+					<input type="radio" name="revenue" value="2"> 2
+				</label>	
+				<label class="btn btn-primary">
+					<input type="radio" name="revenue" value="1"> 1
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="revenue" value="0"> 0
+				</label>			
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Noise
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_noise" value="quiet"> Quiet
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_noise" value="average"> Average
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_noise" value="loud"> Loud
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Work From Home Frequency
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home_frequency" value="never"> Never
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home_frequency" value="once_month"> Once a Month
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home_frequency" value="couple_times_per_month"> Couple Times Per Month
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home_frequency" value="couple_times_per_week"> Couple Times Per Week
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home_frequency" value="once_week"> Once a Week
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_work_from_home_frequency" value="every_day"> Every Day
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Percent of the day music playing
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="0"> 0
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="10"> 10
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="20"> 20
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="30"> 30
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="40"> 40
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="50"> 50
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="60"> 60
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="70"> 70
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="80"> 80
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="90"> 90
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_music_percent" value="100"> 100
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Lunch Habits
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_lunch_habits" value="individually"> Individually
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_lunch_habits" value="small_groups"> Small Groups
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="culture_lunch_habits" value="everyone"> Everyone
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Space Satisfaction
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="space_satisfaction" value="hate_it"> Hate it
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="space_satisfaction" value="dislike_it"> Dislike it
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="space_satisfaction" value="indifferent"> Indifferent
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="space_satisfaction" value="like_it"> Like it
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="space_satisfaction" value="love_it"> Love it
+				</label>		
+			</div>
+			
+			
+			
+		<div>
+			
+			<!--Rituals
+			<select name="culture_rituals" value="culture_rituals">
+			  <option name="culture_rituals" value="0">No</option> 
+			  <option name="culture_rituals" value="1">Yes</option>
+			</select>-->
+		<br />
+		
+		<div id="result">
+		</div>
+	</body>
+</html>

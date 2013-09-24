@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<script src="js/jquery.js" ></script>
+	    <script src="js/script.js"></script>
+	    
+	    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <style>
+	    	.btn-group {
+		    	display: block;
+		    	padding: 20px;
+	    	}
+	    	td {
+		    	border: black;
+		    	border-style: solid;
+	    	}
+	    	
+	    	#id {
+		    	float: left;
+		    	display: block;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div>
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Work Weekends
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_weekends" value="never"> Never
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_weekends" value="once_month"> Once a Month
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_weekends" value="couple_times_per_month"> Couple times per month
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_weekends" value="every_weekend"> Every Weekend
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Average Hours
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_average_hours" value="30"> 30
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_average_hours" value="40"> 40
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_average_hours" value="50"> 50
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_average_hours" value="60"> 60
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_average_hours" value="70"> 70
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Time Busiest
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_busiest" value="morning"> Morning
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_busiest" value="afternoon"> Afternoon
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_busiest" value="evening"> Evening
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_busiest" value="all_day"> All day
+				</label>		
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Time Start
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_start" value="9.0"> Nine
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_start" value="9.5"> Nine Thirty
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_start" value="10.0"> Ten
+				</label>	
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Time End
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_end" value="5.0"> Five
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_end" value="6.0"> Six
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_end" value="6.5"> Six Thirty
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_end" value="7.0"> Seven
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_time_end" value="7.5"> Seven Thirty
+				</label>	
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Summer Fridays
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_summer_fridays" value="no"> No
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_summer_fridays" value="sometimes"> Sometimes
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_summer_fridays" value="most_weeks"> Most Weeks
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_summer_fridays" value="yes"> Yes
+				</label>	
+			</div>
+			
+			<div class="btn-group" data-toggle="buttons">	
+				<label class="btn btn-primary title" disabled="disabled">
+					<input type="radio"> Vacation Days
+				</label> 
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_vacation_days" value="0"> 0
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_vacation_days" value="5"> 5
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_vacation_days" value="10"> 10
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="workaday_vacation_days" value="15"> 15
+				</label>	
+			</div>
+			
+			
+		<div>
+		<br />
+		
+		<div id="result">
+		</div>
+	</body>
+</html>
