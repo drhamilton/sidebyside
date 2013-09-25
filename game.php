@@ -43,13 +43,7 @@ if(!$result = $db->query($sql)){
     die('There was an error running the query [' . $db->error . ']');
 }
 
-/*
-echo 'Total studios matched: ' . $result->num_rows;
-
-echo "<table>";
-*/
-//echo "<thead><td>Year Founded</td><td>Zip Code</td><td>Number of Projects</td><td>Drink of Choice</td><td>Noise Level</td><td>Revenue</td><td>Chair Type</td><td>Space Satisfaction</td><td>Floor Level</td><td>Studio Decorations</td><td>Age</td><td>Square Footage</td><td>Latitude</td><td>Longitude</td>";
-while($row = $result->fetch_assoc()){
+while($row = $result->fetch_assoc()) {
 	/*
 	echo '<tr>';
     echo '<td>' . $row['year_founded'] . '</td>';
@@ -68,14 +62,11 @@ while($row = $result->fetch_assoc()){
     $result_array['revenue'][] = $row['revenue'];
     $result_array['lat'][] = $row['address_geo_lat'];
     $result_array['lng'][] = $row['address_geo_lng'];
-    //echo '</tr>';
 }
-//echo "</table>";
-//echo "<br />";
-if (count($result_array) > 0) {
+
+if ($result_array) {
 	echo json_encode($result_array);
-}
-else {
+} else {
 	echo 0;
 }
 	

@@ -11,6 +11,12 @@ tan #E6C59D
 
 
 */
+
+.chart rect {
+	stroke: white;
+	fill: steelblue;
+}
+
 h1 {
 	color: white;
 }
